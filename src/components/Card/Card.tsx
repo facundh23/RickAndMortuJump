@@ -1,7 +1,10 @@
+import { useState } from "react"
+import Modal from "../Modal/Modatl"
 
 
 
 const CharacterCard = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
     return (
         <>
 
@@ -14,11 +17,13 @@ const CharacterCard = () => {
                     </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                    <button className="btn btn-danger" onClick={() => setIsOpen(true)}> Mor info</button>
                 </div>
             </div>
+
+            <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                <h1>Hola</h1>
+            </Modal>
         </>
     )
 }
