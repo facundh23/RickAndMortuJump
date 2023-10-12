@@ -2,9 +2,8 @@ import CardList from "../../components/Card/CardList"
 
 const HomePage = () => {
     return (
-        <div>
-
-            <CardList />
+        <div className="bg-hero">
+            <CardList characters={[]} />
         </div>
     )
 }
