@@ -13,9 +13,17 @@ export interface Character {
   created: Date;
 }
 
-export type CharacterArr = {
+export interface Response {
   results: Character[];
-};
+  info: Info;
+}
+
+export interface Info {
+  count: number;
+  pages: number;
+  next: string;
+  prev: string;
+}
 
 export interface Location {
   name: string;

@@ -12,7 +12,7 @@ const CharacterCard = ({ gender, species, name, status, image }: Props) => {
     return (
         <>
 
-            <div className="w-[100%] max-w-sm bg-opacity-0 border border-gray-200 rounded-lg text-center mb-2 p-2 sm:w-[100%]  md:w-[100%]">
+            <div className="w-[100%]  max-w-sm bg-opacity-0 border border-black  rounded-lg text-center mb-2 p-2 sm:w-[100%]  md:w-[100%]">
                 <img className=" rounded-full w-[150px] mx-auto hover:scale-105 transition-all du" src={image} alt={name} />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{name}</div>
