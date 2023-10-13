@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Modal from "../Modal/Modatl"
-
+import icons from "../../assets/icons/icons"
+import { BsFillFileEarmarkPersonFill } from 'react-icons/bs'
+import { FcApproval } from 'react-icons/fc'
 
 type Props = {
     gender: string, species: string, name: string, status: string, image: string
@@ -8,11 +10,13 @@ type Props = {
 
 const CharacterCard = ({ gender, species, name, status, image }: Props) => {
 
-    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const { nameIcon } = icons
+
     return (
         <div>
 
-            <div className="w-[100%]  max-w-sm bg-opacity-0 border border-black  rounded-lg text-center mb-2 p-2 sm:w-[100%]  md:w-[100%] hover:bg-black/20 transition-all duration-300">
+            <div className="w-[100%]  max-w-sm bg-opacity-0 border border-black shadow-2xl hover:scale-105 rounded-lg text-center mb-2 p-2 sm:w-[100%]  md:w-[100%] hover:bg-black/20 transition-all duration-300">
                 <img className=" rounded-full w-[150px] mx-auto hover:scale-105 transition-all du" src={image} alt={name} />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{name}</div>
@@ -26,10 +30,10 @@ const CharacterCard = ({ gender, species, name, status, image }: Props) => {
             </div>
 
             <Modal gender={gender} species={species} name={name} status={status} image={image} open={isOpen}>
-                <div className=" flex flex-col items-center w-[100%] gap-2 rounded-md ">
-                    <p className="font-bold">{name}</p>
-                    <p className="font-bold">{gender}</p>
-                    <p className="font-bold"> {status} - {species}</p>
+                <div className=" flex flex-col items-center w-[100%] gap-1 rounded-md ">
+                    <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {name}</p>
+                    <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {gender}</p>
+                    <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {status} | {species}</p>
                     <button onClick={() => setIsOpen(false)} className="w-[100%] bg-gradient-to-r from-red-900 to-red-500  rounded-md p-2 font-bold  hover:scale-105 transition-all duration-500">Close</button>
                 </div>
             </Modal>

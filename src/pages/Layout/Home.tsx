@@ -7,7 +7,7 @@ import { useCharacterList } from "../../hooks/useCharacters"
 
 
 const HomePage = () => {
-    const { isLoading } = useCharacterList();
+    const { isLoading, data } = useCharacterList();
 
     return (
         <>

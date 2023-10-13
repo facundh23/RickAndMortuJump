@@ -24,8 +24,3 @@ export interface Info {
   next: string;
   prev: string;
 }
-
-export interface Location {
-  name: string;
-  url: string;
-}

@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('/../src/assets/images/logo.jpg')",
-        "footer-texture": "url('/img/footer-texture.png')",
+        butonHero: "url('/../src/assets/images/fondo.png')",
       },
       fontFamily: {
         Gabarito: ["Gabarito", "sans-serif"],
