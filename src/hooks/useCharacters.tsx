@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-
-import { Character, Response } from '../types/Character';
-import { baseUrl, rickAndMortyAPI } from '../api/RickAndMortyAPI';
+import { Response } from '../types/Character';
+import { baseUrl } from '../api/RickAndMortyAPI';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -14,7 +13,6 @@ const getCharacters = async (page: number = 1): Promise<Response> => {
 
     return response?.data as Response
 }
-
 
 
 export const useCharacterList = () => {

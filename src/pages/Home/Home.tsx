@@ -1,4 +1,5 @@
 
+import Spinner from "../../assets/spinner/Spinner";
 import CardList from "../../components/Card/CardList"
 import { useCharacterList } from "../../hooks/useCharacters"
 
@@ -7,7 +8,7 @@ import { useCharacterList } from "../../hooks/useCharacters"
 
 
 const HomePage = () => {
-    const { isLoading, data } = useCharacterList();
+    const { isLoading } = useCharacterList();
 
     return (
         <>
@@ -16,7 +17,7 @@ const HomePage = () => {
             <div className=" bg-gradient-to-r from-green-900  to-blue-500 min-h-screen flex flex-col justify-start items-center">
 
                 {
-                    isLoading ? "Loading hacer skeleton" : <CardList />
+                    isLoading ? <Spinner /> : <CardList />
                 }
 
             </div>

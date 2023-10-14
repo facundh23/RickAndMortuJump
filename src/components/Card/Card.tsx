@@ -1,7 +1,5 @@
 import { useState } from "react"
 import Modal from "../Modal/Modatl"
-import icons from "../../assets/icons/icons"
-import { BsFillFileEarmarkPersonFill } from 'react-icons/bs'
 import { FcApproval } from 'react-icons/fc'
 
 type Props = {
@@ -11,7 +9,7 @@ type Props = {
 const CharacterCard = ({ gender, species, name, status, image }: Props) => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const { nameIcon } = icons
+
 
     return (
         <div>
