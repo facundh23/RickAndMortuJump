@@ -44,8 +44,8 @@ const CardList = () => {
                                 return nameToLowerCase.includes(query.toLowerCase());
                             }
                         })
-                            .map(({ name, id, gender, status, species, image }) => (
-                                <CharacterCard name={name} gender={gender} status={status} species={species} image={image} key={id} />
+                            .map(({ name, id, gender, status, species, image, origin }) => (
+                                <CharacterCard name={name} gender={gender} status={status} species={species} origin={origin} image={image} key={id} />
                             )) : 'hola'
                 }
             </div>

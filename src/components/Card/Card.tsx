@@ -6,7 +6,7 @@ type Props = {
     gender: string, species: string, name: string, status: string, image: string
 }
 
-const CharacterCard = ({ gender, species, name, status, image }: Props) => {
+const CharacterCard = ({ gender, species, name, status, image, origin }: Props) => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -32,6 +32,7 @@ const CharacterCard = ({ gender, species, name, status, image }: Props) => {
                     <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {name}</p>
                     <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {gender}</p>
                     <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {status} | {species}</p>
+                    <p className="font-bold flex items-center text-green-400 p-2 bg-black mt-1 w-full justify-center gap-3"> <FcApproval />  {origin.name} | {species}</p>
                     <button onClick={() => setIsOpen(false)} className="w-[100%] bg-gradient-to-r from-red-900 to-red-500  rounded-md p-2 font-bold  hover:scale-105 transition-all duration-500">Close</button>
                 </div>
             </Modal>
