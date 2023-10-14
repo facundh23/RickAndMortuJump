@@ -2,7 +2,7 @@
 import CharacterCard from './Card'
 import { useCharacterList } from '../../hooks/useCharacters';
 import { useSearchParams } from 'react-router-dom';
-import ErrorPage from '../../pages/Error/ErrorPage';
+import HomeSkeleton from '../../assets/skeleton/skeleton';
 
 
 
@@ -21,7 +21,7 @@ const CardList = () => {
 
     return (
         <>
-            <div>{isLoading && <ErrorPage />}</div>
+            <div>{isLoading && <HomeSkeleton />}</div>
 
             <div className='flex items-center justify-around w-[100%]'>
 
@@ -29,7 +29,7 @@ const CardList = () => {
                 <span className='font-bold underline '>{page}</span>
                 <button className='bg-green-500 p-1 rounded-md font-bold w-100 hover:scale-105 duration-200' disabled={page === 42} onClick={() => handleNext()}> Next Page</button>
             </div>
-            <div className='bg-gradient-to-r from-green-900 to-blue-500 w-full min-h-full h-full bg-cover gap-3 p-2 sm:grid sm:grid-cols-2 md:grid-cols-3'>
+            <div className='bg-gradient-to-r from-green-900 to-blue-500 w-full min-h-full h-full bg-cover gap-3 p-2 sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     isSuccess && data!.results.length ?
 
@@ -44,8 +44,8 @@ const CardList = () => {
                                 return nameToLowerCase.includes(query.toLowerCase());
                             }
                         })
-                            .map(({ name, id, gender, status, species, image, origin }) => (
-                                <CharacterCard name={name} gender={gender} status={status} species={species} origin={origin} image={image} key={id} />
+                            .map(({ name, id, gender, status, species, image, origin, location }) => (
+                                <CharacterCard name={name} gender={gender} status={status} species={species} origin={origin} image={image} location={location} key={id} />
                             )) : 'hola'
                 }
             </div>

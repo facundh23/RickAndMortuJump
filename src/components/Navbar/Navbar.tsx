@@ -23,7 +23,7 @@ const Navbar = () => {
 
 
                 <img src={logo} className='max-w-[60px] h-[60px] rounded-full hidden sm:block ' />
-                <input type="text" placeholder='Click here to find your favorite character' className='bg-green-200 p-2 w-[60%] text-center font-bold rounded-md md:text-lg ' value={queryLetter} onChange={handleChangeParams} ref={searchInput} />
+                <input type="text" placeholder='Find your favorite character' className='text-black p-2 w-[60%] text-center font-bold rounded-md md:text-lg focus:bg-green-600' value={queryLetter} onChange={handleChangeParams} ref={searchInput} />
 
 
 

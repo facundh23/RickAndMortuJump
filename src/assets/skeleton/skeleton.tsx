@@ -13,6 +13,7 @@ const HomeSkeleton = (props) => (
     >
         <rect x="14" y="31" rx="3" ry="3" width="273" height="279" />
 
+
     </ContentLoader>
 )
 
