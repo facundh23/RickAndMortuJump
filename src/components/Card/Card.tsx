@@ -13,7 +13,7 @@ const CharacterCard = ({ gender, species, name, status, image, origin, location 
 
 
     return (
-        <div>
+        <div className="flex items-center justify-center">
 
             <div className="w-fit h-fit group m-3">
                 <div className="relative overflow-hidden ">
