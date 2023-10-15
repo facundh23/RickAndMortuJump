@@ -15,10 +15,10 @@ const CharacterCard = ({ gender, species, name, status, image, origin, location 
     return (
         <div>
 
-            <div className="w-60 h-fit group m-3">
-                <div className="relative overflow-hidden">
+            <div className="w-fit h-fit group m-3">
+                <div className="relative overflow-hidden ">
                     <img src={image} alt={name} />
-                    <div className="absolute border-2 z-1 h-full w-full bg-black/90 flex flex-col items-center justify-center  -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                    <div className=" absolute border-2 z-1 h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                         <div className="font-bold text-center text-xl text-white mb-2">{name}</div>
                         <p className="text-green-700 w-[70%] text-center  font-bold bg-black p-2 rounded-md text-xs sm:text-sm md:text-md">
                             Location : {location.name}
