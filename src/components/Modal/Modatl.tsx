@@ -1,10 +1,16 @@
-import { Character } from "../../types/Character"
+
 
 type Props = {
   open: boolean,
   children: React.ReactNode
-  character: Character,
+
   image: string
+
+  gender: string
+  species: string
+  name: string
+  status: string
+
 }
 const Modal = ({ image, open, children }: Props) => {
   return (

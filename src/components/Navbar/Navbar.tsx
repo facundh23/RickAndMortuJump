@@ -11,10 +11,12 @@ const Navbar = () => {
         setSearchParams({ q: target.value });
     };
 
-    const searchInput = useRef(null);
+    const searchInput = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
-        searchInput.current.focus();
+        if (searchInput.current !== null) {
+            searchInput.current.focus();
+        }
     }, [])
     return (
         <>
