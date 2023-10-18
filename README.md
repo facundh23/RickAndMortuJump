@@ -8,16 +8,16 @@
 :arrow_right: TAILWIND CSS :art:
 :arrow_right: JAVASCRIPT :rocket:
 :arrow_right: TYPESCRIPT :rocket:
-:arrow_right: TYPESCRIPT :rocket:
+:arrow_right: REACT JS :rocket:
 
 ### We used the rick and morty API to get the information we needed for our project. :file_folder:
 
 :arrow_right: https://rickandmortyapi.com/ :satellite:
 
-:arrow_right: ### To install the modules you must execute the following command:
+:arrow_right: To install the modules you must execute the following command:
 ### npm install | npm i
 
-:arrow_right: ### To run the application you must type the following command
+:arrow_right: To run the application you must type the following command
 ### npm run dev
 
 
@@ -36,7 +36,9 @@
 ![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/c9469235-b372-49c2-8618-ba341b799d21)
 ![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/989a2eb9-dbac-4963-9a84-77ecc35b59d9)
 
-
+### Resources
+:books: https://es.vitejs.dev/guide/
+:books: https://tailwindcss.com/
 
 Author :black_nib:
 Facundo Herrera
