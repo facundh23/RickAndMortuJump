@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         Gabarito: ["Gabarito", "sans-serif"],
       },
+      backgroundColor: {
+        mainColor: "#5d910f",
+      },
     },
   },
   plugins: [],

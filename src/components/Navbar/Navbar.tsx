@@ -18,12 +18,12 @@ const Navbar = () => {
     }, [])
     return (
         <>
-            <ul className="bg-gradient-to-r from-green-900 to-blue-500 w-[100%] p-3 text-center flex gap-3 items-center justify-center w-30 ">
-                {/* <Link to="/searchpage" className='w-[25%]'>Search Page</Link> */}
+            <ul className="bg-gradient-to-r  from-black to-[#5d910f] w-[100%] p-3 text-center flex gap-3 items-center justify-center w-30 ">
+
 
 
                 <img src={logo} className='max-w-[60px] h-[60px] rounded-full hidden sm:block ' />
-                <input type="text" role="searchInput" placeholder='Find your favorite character' className='text-black p-1 w-[60%] text-center font-bold rounded-md md:text-lg focus:bg-green-600' value={queryLetter} onChange={handleChangeParams} ref={searchInput} />
+                <input type="text" role="searchInput" placeholder='Find your favorite character' className='text-white p-1 w-[60%] text-center placeholder-[#5d910f] font-bold rounded-md md:text-lg focus:bg-white-600 focus:text-[#5d910f] focus:outline-none' value={queryLetter} onChange={handleChangeParams} ref={searchInput} />
 
 
 
