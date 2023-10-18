@@ -1,4 +1,4 @@
-# Reto Hackathon Jump To Digital :computer:
+# Hackathon Jump To Digital :computer:
 
 ## Challenge set in order to participate in the Jump To digital hackathon.It consists in the consumption of an external API and its visualization. :zap:
 
