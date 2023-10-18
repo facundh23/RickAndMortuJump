@@ -36,6 +36,11 @@
 ![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/c9469235-b372-49c2-8618-ba341b799d21)
 ![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/989a2eb9-dbac-4963-9a84-77ecc35b59d9)
 
+
+### Demo
+:globe_with_meridians: https://rickandmortyjump.netlify.app/
+
+
 ### Resources
 :books: https://es.vitejs.dev/guide/  
 
