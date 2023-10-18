@@ -42,5 +42,7 @@
 
 :books: https://tailwindcss.com/
 
+:books: https://rickandmortyapi.com/
+
 Author :black_nib:
 Facundo Herrera
