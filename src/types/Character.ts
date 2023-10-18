@@ -4,7 +4,7 @@ export interface Character {
   status: string;
   species: string;
   type: string;
-  gender: string[];
+  gender: string;
   origin: Location;
   location: Location;
   image: string;
