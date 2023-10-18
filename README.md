@@ -1,27 +1,48 @@
-# React + TypeScript + Vite
+# Hackathon Jump To Digital :computer:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Challenge set in order to participate in the Jump To digital hackathon. It consists in the consumption of an external API and its visualization. :zap:
 
-Currently, two official plugins are available:
+### This web application is developed with the following technologies :open_file_folder:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+:arrow_right: HTML :rocket:
+:arrow_right: TAILWIND CSS :art:
+:arrow_right: JAVASCRIPT :rocket:
+:arrow_right: TYPESCRIPT :rocket:
+:arrow_right: REACT JS :rocket:
 
-## Expanding the ESLint configuration
+### We used the rick and morty API to get the information we needed for our project. :file_folder:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+:arrow_right: https://rickandmortyapi.com/ :satellite:
 
-- Configure the top-level `parserOptions` property like this:
+:arrow_right: To install the modules you must execute the following command:
+### npm install | npm i
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+:arrow_right: To run the application you must type the following command
+### npm run dev
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+### Bellow are images of the project 📷
+
+### Web
+
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/e0fd6c8e-11f6-4fd5-8a90-9f9589a255c5)
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/bab8d771-181d-49b2-a60d-b045190076d5)
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/7277891b-d9b4-4727-82b8-9488f1abf4d8)
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/82512a3a-57d8-46a7-b7f8-73485f5d9f2a)
+
+
+
+### Responsive
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/c9469235-b372-49c2-8618-ba341b799d21)
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/989a2eb9-dbac-4963-9a84-77ecc35b59d9)
+
+### Resources
+:books: https://es.vitejs.dev/guide/  
+
+
+:books: https://tailwindcss.com/
+
+:books: https://rickandmortyapi.com/
+
+Author :black_nib:
+Facundo Herrera
