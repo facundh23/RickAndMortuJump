@@ -37,7 +37,9 @@
 ![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/989a2eb9-dbac-4963-9a84-77ecc35b59d9)
 
 ### Resources
-:books: https://es.vitejs.dev/guide/
+:books: https://es.vitejs.dev/guide/  
+
+
 :books: https://tailwindcss.com/
 
 Author :black_nib:
