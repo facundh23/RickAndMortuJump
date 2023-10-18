@@ -16,9 +16,9 @@ const CharacterCard = ({ gender, species, name, status, image, origin, location 
         <div className="flex items-center justify-center">
 
             <div className="w-fit h-fit group m-3 rounded-full">
-                <div className="relative overflow-hidden  rounded-full">
+                <div className="relative overflow-hidden shadow-2xl rounded-full">
                     <img src={image} alt={name} />
-                    <div className=" absolute border-2 z-1 rounded-full h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className=" absolute  z-1  rounded-full h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                         <div className="font-bold text-center text-md text-white mb-2">{name}</div>
                         <p className="text-green-700 w-[60%] text-center  font-bold bg-black p-2 rounded-md text-xs sm:text-sm md:text-md">
                             Location : {location.name}
