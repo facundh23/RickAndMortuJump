@@ -1,32 +1,33 @@
-import { useQuery } from '@tanstack/react-query';
-import { Response } from '../types/Character';
-import { baseUrl } from '../api/RickAndMortyAPI';
-import { useState } from 'react';
-import axios from 'axios';
+import { useMemo } from "react";
+import { useInfiniteQuery } from "@tanstack/react-query";
+import { Response } from "../types/Character";
 
+export const useCharacter = () => {
 
-
-
-const getCharacters = async (page: number = 1): Promise<Response> => {
-
-    const response = await axios(`${baseUrl}/character/?page=${page}`)
-
-    return response?.data as Response
-}
-
-
-export const useCharacterList = () => {
-    const [page, setPage] = useState(1)
-    const { data, error, isLoading, isFetching, isError, isSuccess } = useQuery(["characters", page], () => getCharacters(page),
+    const { data, error, fetchNextPage, status, hasNextPage } = useInfiniteQuery(
+        ['characters'],
+        ({ pageParam = 1 }) => fetch(`https://rickandmortyapi.com/api/character/?page=${pageParam}`).then(res => res.json()),
         {
-            keepPreviousData: true,
-            refetchOnMount: true
-        }
+            getNextPageParam: (lastPage: Response) => {
 
+                const previousPage = lastPage.info.prev ? +lastPage.info.prev.split('=')[1] : 0
+                const currentPage = previousPage + 1;
+
+                if (currentPage === lastPage.info.pages) return false;
+                return currentPage + 1;
+            }
+        }
     )
 
+    const characters = useMemo(() => data?.pages.reduce((prev, page) => {
+        return {
+            info: page.info,
+            results: [...prev.results, ...page.results]
+        }
+    }), [data])
 
-
-    return { data, error, isLoading, isFetching, isError, page, isSuccess, setPage }
-
+    return {
+        error, fetchNextPage, status, hasNextPage,
+        characters
+    }
 }
