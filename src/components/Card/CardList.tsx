@@ -27,26 +27,30 @@ const CardList = () => {
                 hasMore={!!hasNextPage}
                 loader={<Spinner />}
             >
-                <div className='bg-gradient-to-r from-green-900 to-blue-500 w-full min-h-full h-full bg-cover gap-3 p-2 sm:grid sm:items-center sm:grid-cols-2 md:grid-cols-3 md:place-items-center lg:grid-cols-4 lg:place-items-center'>
-                    {
+                {
+
+                    <div className='bg-transparent w-full min-h-full h-full bg-cover gap-3 p-2 sm:grid sm:items-center sm:grid-cols-2 md:grid-cols-3 md:place-items-center lg:grid-cols-4 lg:place-items-center'>
+                        {
 
 
 
-                        characters?.results.filter(({ name }) => {
+                            characters?.results.filter(({ name }) => {
 
 
-                            if (!query) return true
+                                if (!query) return true
 
-                            if (query) {
-                                const nameToLowerCase = name.toLowerCase();
-                                return nameToLowerCase.includes(query.toLowerCase());
-                            }
-                        })
-                            .map(({ name, id, gender, status, species, image, origin, location }) => (
-                                <CharacterCard name={name} gender={gender} status={status} species={species} origin={origin} image={image} location={location} key={id} />
-                            ))
-                    }
-                </div>
+                                if (query) {
+                                    const nameToLowerCase = name.toLowerCase();
+                                    return nameToLowerCase.includes(query.toLowerCase());
+                                }
+                            })
+                                .map(({ name, id, gender, status, species, image, origin, location }) => (
+                                    <CharacterCard name={name} gender={gender} status={status} species={species} origin={origin} image={image} location={location} key={id} />
+                                ))
+                        }
+                    </div>
+                }
+
 
             </InfiniteScroll >
         </>
