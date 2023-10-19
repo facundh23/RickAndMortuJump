@@ -14,27 +14,57 @@
 
 :arrow_right: https://rickandmortyapi.com/ :satellite:
 
-:arrow_right: To install the modules you must execute the following command:
-### npm install | npm i
+![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/1332b7a0-1829-470f-b7b1-a75a9ce33601)
 
-:arrow_right: To run the application you must type the following command
-### npm run dev
+# Libraries and Dependencies
 
+- Vite: Vite is a fast and lightweight build tool and development server for modern web projects. It offers near-instantaneous development server startup and quick HMR (Hot Module Replacement) updates, making it an excellent choice for React applications.
 
-### Bellow are images of the project 📷
+- React: As mentioned earlier, React is a popular JavaScript library for building user interfaces.
+- TypeScript: TypeScript adds static typing to JavaScript, making the development process more productive and the codebase more robust.
+- react-icons: A library that offers a vast collection of customizable icons for React applications, making it simple to include icons in the UI.
+- react-router-dom: React Router is used to handle navigation and routing in the application, enabling smooth transitions between different pages.
 
-### Web
+# Clone the Repository
 
-![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/e0fd6c8e-11f6-4fd5-8a90-9f9589a255c5)
-![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/bab8d771-181d-49b2-a60d-b045190076d5)
-![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/7277891b-d9b4-4727-82b8-9488f1abf4d8)
-![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/82512a3a-57d8-46a7-b7f8-73485f5d9f2a)
+To get a local copy of the application, follow these steps:
 
+Open your terminal or command line.
 
+Clone the repository by executing the following command:
 
-### Responsive
-![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/c9469235-b372-49c2-8618-ba341b799d21)
-![image](https://github.com/facundh23/RickAndMortyJump/assets/90207514/989a2eb9-dbac-4963-9a84-77ecc35b59d9)
+`git clone https://github.com/facundh23/RickAndMortyJump.git`
+
+Access the project directory:
+
+`cd RickAndMortyJump/`
+
+Install Dependencies
+Before running the application, make sure you have Node.js installed on your system. Then, install the dependencies using npm or yarn (make sure to have yarn installed beforehand):
+
+`npm install` 
+
+or 
+
+`yarn install`
+
+# Run the Application
+Once the dependencies are installed, you can start the application in local development mode with the following command:
+
+`npm run dev`
+
+or
+
+`yarn dev`
+
+This will launch the application in your browser at http://localhost:5173.
+
+# Additional Scripts
+
+npm run build: This command compiles the TypeScript code and creates an optimized production-ready build.
+
+npm run lint: Runs ESLint to check code formatting and detect issues in the TypeScript code.
+Feel free to explore and enjoy the Apollofy app! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. 
 
 
 ### Demo
@@ -48,6 +78,8 @@
 :books: https://tailwindcss.com/
 
 :books: https://rickandmortyapi.com/
+
+Happy coding!
 
 Author :black_nib:
 Facundo Herrera
