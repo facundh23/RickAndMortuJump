@@ -57,7 +57,7 @@ or
 
 `yarn dev`
 
-This will launch the application in your browser at http://localhost:5173.
+This will launch the application in your browser at http://localhost:5173 || http://127.0.0.1:5173/.
 
 # Additional Scripts
 
@@ -73,7 +73,6 @@ Feel free to explore and enjoy the Apollofy app! If you encounter any issues or 
 
 ### Resources
 :books: https://es.vitejs.dev/guide/  
-
 
 :books: https://tailwindcss.com/
 
