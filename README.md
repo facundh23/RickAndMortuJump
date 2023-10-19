@@ -24,6 +24,7 @@
 - TypeScript: TypeScript adds static typing to JavaScript, making the development process more productive and the codebase more robust.
 - react-icons: A library that offers a vast collection of customizable icons for React applications, making it simple to include icons in the UI.
 - react-router-dom: React Router is used to handle navigation and routing in the application, enabling smooth transitions between different pages.
+- Tailwind CSS: Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.
 
 # Clone the Repository
 
